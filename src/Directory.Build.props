@@ -1,0 +1,10 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <PackageOutputPath>$(OutDir)</PackageOutputPath>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Company>Immo Landwerth</Company>
+    <Copyright>Copyright © Immo Landwerth</Copyright>
+  </PropertyGroup>
+
+</Project>

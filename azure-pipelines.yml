@@ -1,0 +1,17 @@
+pool:
+  vmImage: 'Ubuntu 16.04'
+
+variables:
+  buildConfiguration: 'Release'
+  sln: ./src/streaming-automation.sln
+  outDir: $(Build.ArtifactStagingDirectory)
+
+steps:
+- task: DotNetCoreInstaller@0
+  inputs:
+    packageType: 'sdk'
+    version: '3.0.100-preview3-010431'
+- script: dotnet build $(sln) -c $(buildConfiguration) -o $(outDir) /nologo
+  displayName: 'dotnet build $(buildConfiguration)'
+- task: PublishBuildArtifacts@1
+  condition: and(succeeded(), eq(variables['system.pullrequest.isfork'], false))
