@@ -138,7 +138,7 @@ namespace Terrajobst.StreamingAutomation.YouTube
             request.Id = eventId;
             var response = await request.ExecuteAsync();
             var item = response.Items.Single();
-            return item.Status.LifeCycleStatus == "liveStarting";
+            return item.Status.LifeCycleStatus == "live";
         }
     }
 
