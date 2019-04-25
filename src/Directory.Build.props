@@ -7,4 +7,12 @@
     <Copyright>Copyright © Immo Landwerth</Copyright>
   </PropertyGroup>
 
+  <!-- Enable source link -->
+  <PropertyGroup>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
 </Project>
