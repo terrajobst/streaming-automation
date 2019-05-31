@@ -6,6 +6,10 @@
 
  [![nuget](https://img.shields.io/nuget/v/Terrajobst.StreamingAutomation.Obs.svg)](https://www.nuget.org/packages/Terrajobst.StreamingAutomation.Obs/)
 
+```
+dotnet add package Terrajobst.StreamingAutomation.Obs
+```
+
 This allows you to automate OBS Studio. In order to use it, you need to install
 the [Stream Deck] software. You don't have to have the Stream Deck connected to
 your computer though.
@@ -53,6 +57,10 @@ private void StopStreamButton_Click(object sender, EventArgs e)
 ## YouTube
 
 [![nuget](https://img.shields.io/nuget/v/Terrajobst.StreamingAutomation.YouTube.svg)](https://www.nuget.org/packages/Terrajobst.StreamingAutomation.YouTube/)
+
+```
+dotnet add package Terrajobst.StreamingAutomation.YouTube
+```
 
 After you started the OBS stream, you probably want to start the broad cast on a
 streaming platform like YouTube. If you can use YouTube Stream Now, then
